@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RANDOM MAZE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="app">
+    <header class="header">
+      <div class="logo">M</div>
+      <div>
+        <p class="eyebrow">RANDOM GAME</p>
+        <h1>RANDOM <span>MAZE</span></h1>
+      </div>
+      <div class="status"><i></i> READY</div>
+    </header>
+
+    <section class="game-panel">
+      <div class="game-info">
+        <div class="info-card">
+          <span>КРОКИ</span>
+          <strong id="steps">0</strong>
+        </div>
+        <div class="info-card">
+          <span>РОЗМІР</span>
+          <strong>15 × 15</strong>
+        </div>
+      </div>
+
+      <div class="maze-frame">
+        <div id="maze" class="maze" aria-label="Ігровий лабіринт"></div>
+      </div>
+
+      <div id="message" class="message">
+        Знайди вихід із лабіринту!
+      </div>
+
+      <button id="newMaze" class="new-button">
+        ↻ NEW MAZE
+      </button>
+
+      <div class="legend">
+        <div><i class="player-dot"></i> ГРАВЕЦЬ</div>
+        <div><i class="exit-dot"></i> ВИХІД</div>
+        <div><i class="wall-dot"></i> СТІНА</div>
+      </div>
+
+      <div class="controls">
+        <p>КЕРУВАННЯ</p>
+        <div class="control-keys">
+          <span>W</span>
+          <span>↑</span>
+          <span>A</span>
+          <span>↓</span>
+          <span>D</span>
+          <span>←</span>
+          <span>→</span>
+          <span>S</span>
+        </div>
+        <small>Використовуй стрілки або WASD</small>
+      </div>
+    </section>
+
+    <footer>RANDOM MAZE <span>•</span> КОЖНА ГРА — НОВИЙ ЛАБІРИНТ</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
